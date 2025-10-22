@@ -1,6 +1,5 @@
 
-Link do curso:  [ https://www.youtube.com/watch?v=84FhNXNWoig&list=PLvlkVRRKOYFQyKmdrassLNxkzSMM6tcSL&index=1 ]
-
+Link do curso de git:  [ https://www.youtube.com/watch?v=84FhNXNWoig&list=PLvlkVRRKOYFQyKmdrassLNxkzSMM6tcSL&index=1 ]
 
 ## Comandos principais
 git init .           -> Cria um repositório git na pasta atual
@@ -23,7 +22,6 @@ git push	     -> Envia as coisa para a origem
 9. volta para o passo 3
 
 ## Fluxo de trabalho Git local
-
 01. git checkout -b <nova-branch>
 02. cria ou atualiza arquivos
 03. git status
