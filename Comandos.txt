@@ -1,0 +1,113 @@
+COMANDOS REPOSITÓRIO LOCAL E GITHUB
+learngitbranching.js.org
+
+================================================================================================================================================
+Ctrl Shift A - abrir o Visual Studio Code
+================================================================================================================================================
+Ctrl Enter - depois feita uma alteração inserir os cometanrios e clicar em Ctrl Enter para comitar
+================================================================================================================================================
+Ctrl P - para publicar no git hub
+================================================================================================================================================
+Ctrl + C para interromper terminal
+
+FORK cria uma copia na sua conta github para ficar publicando na sua conta, porque não vai conseguir fazer na conta da pessoa que criou a não ser que tenha autorização
+
+git remote set-url origin https://github.com/your/repository
+git remote -v -> para ver o alias de publicação remota e a url
+git remote nome da branch
+git remote -> retorna nome do endereço
+git remote remove origin
+git remote --help
+git push origin --delete nome da branch
+
+git clone https://github.com/your/repository nome da pasta -. para fazer o clone e criar uma pasta
+
+git config --global user.email "bueno.alexandre@gmail.com" - assinar com o e-mail os commits
+git config --global user.name "Alexandre Bueno" - assinar com o nome os commits
+git config --global user.email - para visualizar se o e-mail está correto o
+git config --global user.name para visualizar se o nome está correto
+git config --global --unset user.email
+git config --list --global
+
+git checkout nome da branch que quer mudar -> mudar de branch
+git checkout -b nome da brach -> cria uma branch e já muda para a branch criada
+
+git branch -> saber a branch
+git branch nome da branch -> cria uma branch
+git branch -m main (renomeia para main)
+git branch -d nome da branch -> apagar a branch
+git branch -D nome da branch -> apagar de qualquer forma a branch qdo tem o D maiúsculo
+
+git config -- global user.name "seu nome"
+git config -- global user.email "seu email"
+git --version
+git init
+git status
+
+git remote add origin https://github.com/buenoalexandre/Repositorio.git (cria a conexão remota)
+
+git log  -> para saber histórico de commites
+git log --oneline -> para saber histórico de commites de forma condensada
+
+git merge o nome da branch q tem os arquivos
+
+
+"git.mergeEditor": true,
+
+git add.
+git add --all
+git add. && git commit -m "mensagem do comite"
+git commit -m "mensagem do comite" -- author="Nome <nome@gmail.com>"
+git push
+git push -u origin main
+git push -u origin master
+git push --set-upstream origin outra -> para criar uma nova branch no github e fazer uma publicação
+git push -u origin outra -> para criar uma nova branch no github e fazer uma publicação
+
+git pull
+git commit -m "mensagem do comite" -- author="Nome <nome@gmail.com>" (mudar o autor da publicação)
+-- author="Nome <nome@gmail.com>"
+
+git tag -> lista as tags
+git tag -n -> lista todas as tags com os comentarios
+git tag versão do software
+git tag versão do software -m "descrição da versão"
+git push origin versão do software -> para enviar a tag para o github
+git push origin --tags -> para enviar todas as tag para o github
+
+
+Desfazendo commit
+git checkout id do commit -> volta ao ponto que foi o commit
+git checkout branch -> volta à branchgit
+git revert id do commit -> aquele commit é anulado e os outros permanecem
+git reset id do comit -> volta ao ponto do commit e deleta todos os comites para frente. 
+
+
+Arquivo .gitignore
+
+mkdir dist (criar a pasta de distribuição)
+precisa incluir a pasta dentro do arquivo gitignore e para não trackear
+
+
+Encerrar o git
+q
+:q
+:z
+ctrl + z
+
+
+LINUX
+cd ~/ -  volta ao diretório raiz
+ls listar arquivos e diretórios
+ls -t listar diretorios
+ls -a listar arquivos ocultos
+mkdir - criar diretorios
+rmdir - deleta diretorios diretorios
+rm -rf - deleta diretorios e arquivos
+touch nome do arquivo -> cria o arquivo
+pwd -. mostra o caminho interiro
+nano nome do arquivoo- edita um arquivo
+cat nome do arquivo - exibe o conteúdo do arquivo
+mv nome arquivo origem nome arquivo destino (muda o arquivo de lugar ou renomei)
+
+RMDIR TEMP /S /Q -> apagar todas as pastas no cmd
