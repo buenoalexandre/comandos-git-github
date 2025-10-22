@@ -18,6 +18,9 @@ git remote nome da branch
 git remote -> retorna nome do endereço
 git remote remove origin
 git remote --help
+git remote -v
+
+git remote add origin https://github.com/buenoalexandre/comandos-git-github.git
 git push origin --delete nome da branch
 
 git clone https://github.com/your/repository nome da pasta -. para fazer o clone e criar uma pasta
@@ -28,6 +31,9 @@ git config --global user.email - para visualizar se o e-mail está correto o
 git config --global user.name para visualizar se o nome está correto
 git config --global --unset user.email
 git config --list --global
+
+git reset <nome do arquivo> para voltar um arquivo adicionado no add
+git diff <nome do arquivo> para saber oque foi alterado
 
 git checkout nome da branch que quer mudar -> mudar de branch
 git checkout -b nome da brach -> cria uma branch e já muda para a branch criada
