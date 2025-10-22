@@ -1,10 +1,13 @@
-git init .           -> Cria um repo git na pasta atual
+## Comandos principais
+git init .           -> Cria um repositório git na pasta atual
 git status           -> Mostra o status do trabalho (de cada arquivo)
 git add nome_arquivo -> Adiciona arquivo para ser commitado
 git commit -m "msg"  -> Faz commit do que estava para ser commitado 
 git log              -> Mostra todo o histórico de commit
+git pull	     -> Recebe as coisas da origem
+git push	     -> Envia as coisa para a origem
 
-## FLUXO DE TRABALHO
+## Fluxo de trabalho inicial
 1. criar o diretório (pasta) do projeto
 2. iniciar o git dentro do diretório criado (git init .)
 3. edita ou cria arquivos
@@ -14,3 +17,44 @@ git log              -> Mostra todo o histórico de commit
 7. git commit -m "Mensagem estranha"
 8. git status
 9. volta para o passo 3
+
+
+## Fluxo de trabalho Git local
+
+01. git checkout -b <nova-branch>
+02. cria ou atualiza arquivos
+03. git status
+05. git add *arquivos*
+06. git status
+07. git commit -m "minha mensagem"
+08. git checkout main
+09. git merge nova_branch
+
+## Fluxo de trabalho GitHub <> Local (projeto próprio ou da sua empresa)
+01. git clone <endereco do projeto>
+02. git checkout -b <nova_branch>
+03. alterações de arquivos
+04. git status
+05. git add *arquivos*
+06. git status
+07. git commit -m "nova mensagem"
+08. git push origin <nova_branch>
+09. abrir Pull request no GitHub para main
+10. excluir <nova_branch> origin
+11. git checkout main
+12. git branch -D <nova_branch>
+
+## Fluxo de trabalho GitHub <> Local (projetos open-source)
+01. Fork do projeto para seu próprio github
+02. git clone <endereco do projeto fork>
+03. git checkout -b <nova_branch>
+04. alterações de arquivos
+05. git status
+06. git add *arquivos*
+07. git status
+08. git commit -m "nova mensagem"
+09. git push origin <nova_branch>
+10. abrir Pull request no GitHub da branch fork para a main do projeto original
+11. excluir <nova_branch> origin
+12. git checkout main
+13. git branch -D <nova_branch>
