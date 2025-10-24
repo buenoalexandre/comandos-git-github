@@ -1,5 +1,5 @@
 ================================================================================================================================================
-COMANDOS REPOSITÓRIO LOCAL E GITHUB
+COMANDOS REPOSITÓRIO LOCAL E GITHUB NA PRÁTICA
 ================================================================================================================================================
 learngitbranching.js.org
 
@@ -35,7 +35,7 @@ git config --global --unset user.email
 git config --list --global
 
 git reset <nome do arquivo> para voltar um arquivo adicionado no add
-git diff <nome do arquivo> para saber oque foi alterado
+git diff <nome do arquivo> para saber o que foi alterado
 
 git checkout nome da branch que quer mudar -> mudar de branch
 git checkout -b nome da brach -> cria uma branch e já muda para a branch criada
